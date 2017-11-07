@@ -153,10 +153,12 @@ switch(pantalla){
   //////////////////////////////////-----------------------------PANTALLA INSTRUCCIONES
   case 1:
    background(backinstrucciones);
-    textSize(40);
+      textFont(titulo1);
+      textSize(40);
       fill(random(200,255));
-      text("INSTRUCCIONES",285,75);
+      text("INSTRUCCIONES",205,75);
       
+      textFont(titulo2);
       textSize(22);
       fill(255);
       text("En una ciudad llena de contaminación, todos los dias las estrellas",50,150);
@@ -219,11 +221,14 @@ switch(pantalla){
     v[i] += dv [i];
     ellipse(h[i],v[i],5,5);
     }
-    textSize(40);
       fill(0,100);
-    rect(185,35,540,50);
+    rect(85,35,735,50);
+    
+    textFont(titulo1);
+    textSize(35);
       fill(255);
-      text("SELECCIONAR PERSONAJES",200,75);
+      text("SELECCIONAR PERSONAJES",100,75);
+    textFont(titulo2);
     textSize(30);
       fill(230,0,0);   
       text("JUGADOR 1",365,120);
@@ -582,13 +587,16 @@ switch(pantalla){
     v[i] += dv [i];
     ellipse(h[i],v[i],5,5);
     }
-    textSize(40);
-      fill(0,100);
-    rect(185,35,540,50);
+    fill(0,100);
+    rect(85,35,735,50);
+    
+    textFont(titulo1);
+    textSize(35);
       fill(255);
-      text("SELECCIONAR PERSONAJES",200,75);
+      text("SELECCIONAR PERSONAJES",100,75);
+    textFont(titulo2);
     textSize(30);
-      fill(225,215,0);   
+      fill(230,0,0);   
       text("JUGADOR 2",365,120);
     
   //------------------------------------------------P. LUNA MENU
@@ -1388,9 +1396,11 @@ if(cielo == 2){
     }
     fill(255,100);
     rect(220,195,455,70);
-    textSize(65);
+    textFont(titulo1);
+    textSize(40);
     fill(0);
-    text("PRONOSTICO",258,245);
+    text("PRONOSTICO",268,245);
+    textFont(titulo2);
      textSize(55);
     fill(random(210,255),random(210,255),random(0));
     text("Noche Estrellada",200,355);
@@ -1420,12 +1430,14 @@ if(cielo == 2){
     }
     fill(255,100);
     rect(220,195,455,70);
-    textSize(65);
+    textFont(titulo1);
+    textSize(40);
     fill(0);
-    text("PRONOSTICO",258,245);
+    text("PRONOSTICO",268,245);
+    textFont(titulo2);
      textSize(55);
     fill(random(100,153),0,0);
-    text("Muerte Instantanea",185,355);
+    text("Muerte Instantanea",165,355);
   }
 }
 
@@ -1461,4 +1473,4 @@ void pelea2(){
         }
       }
    }
-  
+   
